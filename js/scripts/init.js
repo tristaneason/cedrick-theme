@@ -155,16 +155,16 @@
 
 		//Waypoints.js
 		var waypointInit = function() {
-			var stickyHeader = new Waypoint({
-				element: document.getElementById('belowHero'),
-				handler: function(direction) {
-					if (direction === 'down') {
-						$(".fixed-nav").removeClass("non-sticky");
-					} else {
-						$(".fixed-nav").addClass("non-sticky");
-					}
-				}
-			});
+			// var stickyHeader = new Waypoint({
+			// 	element: document.getElementById('belowHero'),
+			// 	handler: function(direction) {
+			// 		if (direction === 'down') {
+			// 			$(".fixed-nav").removeClass("non-sticky");
+			// 		} else {
+			// 			$(".fixed-nav").addClass("non-sticky");
+			// 		}
+			// 	}
+			// });
 		};
 		waypointInit();
 
