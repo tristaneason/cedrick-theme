@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	font-size: 14px;
+	line-height: 1.6;
+	font-weight: 300;
+	font-family: $sans;
+	background: #e7e7e7;
+	color: #444;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-touch-callout: none !important;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+a {
+	color: $primary;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover {
+	color: $black;
+}
+a:focus {
+	outline: 0;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
