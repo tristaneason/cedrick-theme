@@ -1,15 +1,17 @@
+// COLOR VARIABLES = = = = = = =
+
 $primary: #4ca2d6;		// Primary is Blue
-$secondary: #eed31e;	// Secondary is Yellow
+$secondary: #eed31e;		// Secondary is Yellow
 $tertiary: #f926a2;		// Tertiary is Magenta (pink)
 
 // darkening code
 // @link-hover-color: darken(@link-color, 15%);
 
-$beige: #b8b79a;
 
 $lightGray: #f6f6f6;
 $medLtGray: #d7d7d7;
-$medDkGray: #777777;
+$medGray: #777777;
+$medDkGray: #555555;
 $darkGray: #353333;
 
 $white: #fff;
@@ -18,49 +20,32 @@ $black: #000;
 $test: #62e920;		// Test is a bright green just for testing purposes
 
 
-$sans: 'Gotham SSm A', 'Gotham SSm B', Helvetica, sans-serif;  // Gotham has weights of 200, 300, 400, 500, 700, 800
-$serif: "Courier New", "Times New Roman", Serif;  // Courier New has weights of "normal" and "bold"
+// FONT VARIABLES = = = = = = =
+
+$sans: 'Montserrat', Helvetica, sans-serif;		// Montserrat has weights of 400 & 700
+$sansAlt: 'Lato', Helvetica, sans-serif;			// Lato has weights of 100, 300, & 400
+$serif: 'Playfair Display', Times, Serif;			// Playfair Display has normal (400) weight with italic option
 
 
+%sans {
+	font-family: $sans;
+	font-weight: 400;
+}
+%sansIt {
+	@extend %sans;
+	font-style: italic;
+}
+%sansB {
+	@extend %sans;
+	font-weight: 700;
+}
 
 
-// Some cool mixins for border radius
-// .border-top-radius(@radius) {
-//   border-top-right-radius: @radius;
-//    border-top-left-radius: @radius;
-// }
-// .border-right-radius(@radius) {
-//   border-bottom-right-radius: @radius;
-//      border-top-right-radius: @radius;
-// }
-// .border-bottom-radius(@radius) {
-//   border-bottom-right-radius: @radius;
-//    border-bottom-left-radius: @radius;
-// }
-// .border-left-radius(@radius) {
-//   border-bottom-left-radius: @radius;
-//      border-top-left-radius: @radius;
-// }
-
-
-
-// Retina Images
-// .img-retina(@file-1x; @file-2x; @width-1x; @height-1x) {
-//   background-image: url("@{file-1x}");
-//
-//   @media
-//   only screen and (-webkit-min-device-pixel-ratio: 2),
-//   only screen and (   min--moz-device-pixel-ratio: 2),
-//   only screen and (     -o-min-device-pixel-ratio: 2/1),
-//   only screen and (        min-device-pixel-ratio: 2),
-//   only screen and (                min-resolution: 192dpi),
-//   only screen and (                min-resolution: 2dppx) {
-//     background-image: url("@{file-2x}");
-//     background-size: @width-1x @height-1x;
-//   }
-// }
-//
-// // Usage
-// .jumbotron {
-//   .img-retina("/img/bg-1x.png", "/img/bg-2x.png", 100px, 100px);
-// }
+%serif {
+	font-family: $serif;
+	font-weight: 400;
+}
+%serifB {
+	@extend %serif;
+	font-weight: 700;
+}
