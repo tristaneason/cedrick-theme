@@ -267,6 +267,12 @@
 		"oAP": "\/css\/.sass-cache\/f50ce6296cf46ee383d7c4ce6fe6aae63d5ed096\/_sidebar.scssc",
 		"oF": 0
 		},
+	"\/css\/components\/.sass-cache\/4d39d238e4663988aad46ee118d16b9934c98d59\/patterns.scssc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/components\/.sass-cache\/4d39d238e4663988aad46ee118d16b9934c98d59\/patterns.scssc",
+		"oF": 0
+		},
 	"\/css\/components\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -562,6 +568,29 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
+		},
+	"\/css\/patterns\/_patterns.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/patterns\/patterns.css",
+		"oF": 3,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/patterns\/patterns.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/patterns\/patterns-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/css\/site.css": {
 		"aP": 0,
@@ -898,6 +927,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/partials\/partial-contact.php",
+		"oF": 0
+		},
+	"\/patterns.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/patterns.html",
 		"oF": 0
 		},
 	"\/screenshot.png": {
