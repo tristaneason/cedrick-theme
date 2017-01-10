@@ -1157,6 +1157,25 @@ th {
   display: block;
   cursor: pointer; }
 
+.hasOverlay .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.hasOverlay {
+  position: relative;
+  z-index: 1; }
+  .hasOverlay .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2; }
+  .hasOverlay .overlay-content {
+    position: absolute;
+    z-index: 3; }
+
 /*
 USAGE EXAMPLE
 div.image {
@@ -1208,9 +1227,6 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
-a:hover {
-  color: #000; }
-
 a:focus {
   outline: 0; }
 
@@ -1259,6 +1275,49 @@ input:focus {
         padding: 12px 17px; }
   .gform_wrapper label.gfield_label {
     display: none; }
+
+.center-btns {
+  text-align: center; }
+
+.btn {
+  color: #fff;
+  background-color: #000;
+  font-size: 16px;
+  padding: 12px 20px;
+  display: inline-block; }
+  .btn.btn--primary {
+    background-color: #4ca2d6; }
+  .btn.btn--secondary {
+    background-color: #eed31e; }
+  .btn:hover {
+    background-color: #1a1a1a; }
+    .btn:hover.btn--primary {
+      background-color: #75b8e0; }
+    .btn:hover.btn--secondary {
+      background-color: #f2dc4d; }
+  .btn.btn--ghost {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000; }
+    .btn.btn--ghost.btn--primary {
+      color: #4ca2d6;
+      border-color: #4ca2d6; }
+    .btn.btn--ghost.btn--secondary {
+      color: #eed31e;
+      border-color: #eed31e; }
+    .btn.btn--ghost:hover {
+      color: #fff;
+      background-color: #000; }
+      .btn.btn--ghost:hover.btn--primary {
+        background-color: #4ca2d6; }
+      .btn.btn--ghost:hover.btn--secondary {
+        background-color: #eed31e; }
+  .btn.btn--l {
+    font-size: 22px;
+    padding: 20px 40px; }
+  .btn.btn--s {
+    font-size: 14px;
+    padding: 8px 14px; }
 
 .footer-copyright p {
   font-family: "Playfair Display", Times, Serif;
