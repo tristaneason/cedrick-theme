@@ -56,7 +56,7 @@
 				(-webkit-min-device-pixel-ratio: 1.3),
 				(min-device-pixel-ratio: 1.3),
 				(min-resolution: 1.3dppx) {
-		/* on retina, use image that's scaled by 2 */
+		/* for retina images, background-size should be set to half of retina resolution */
 		background-image: url($image);
 		background-size: $width $height;
 	}
