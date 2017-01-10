@@ -49,6 +49,23 @@
 }
 
 
+.hasOverlay {
+	position: relative;
+	z-index: 1;
+
+	.overlay {
+		@extend %absFill;
+		background-color: rgba($black, 0.3);
+		z-index: 2;
+	}
+
+	.overlay-content {
+		position: absolute;
+		z-index: 3;
+	}
+}
+
+
 // RETINA IMAGES
 @mixin image-2x($image, $width, $height) {
 	@media	(min--moz-device-pixel-ratio: 1.3),
