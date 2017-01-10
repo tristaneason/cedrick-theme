@@ -7,7 +7,7 @@
 
 
 //----------------------------------*\
-// CONFIG MODULES
+// GLOBALS, LAYOUTS, AND HELPERS
 //----------------------------------*/
 
 @import 'globals/_vars.scss';
@@ -16,7 +16,6 @@
 @import 'helpers/_misc.scss';
 @import 'helpers/_helpers.scss';
 @import 'helpers/_clearfix.scss';
-@import 'components/_forms.scss';
 @import 'globals/_defaults.scss';
 
 
@@ -25,6 +24,14 @@
 //----------------------------------*/
 
 @import 'helpers/_selection.scss';
+
+
+//----------------------------------*\
+// COMPONENTS
+//----------------------------------*/
+
+@import 'components/_forms.scss';
+@import 'components/_buttons.scss';
 
 
 //----------------------------------*\
@@ -45,19 +52,13 @@
 
 
 //----------------------------------*\
-// OBJECTS & MODULES
+// LAST CALL GLOBALS
 //----------------------------------*/
-
-@import 'components/_buttons.scss';
 
 // Enhancement modules
 @import 'globals/_breakpoints.scss';
 @import 'globals/_retina-images.scss';
 @import 'globals/_print.scss';
 
-
-//----------------------------------*\
-// MISC.
-//----------------------------------*/
-
+// Misc
 @import 'globals/wp-styles.css';
