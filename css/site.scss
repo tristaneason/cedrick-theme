@@ -10,30 +10,30 @@
 // CONFIG MODULES
 //----------------------------------*/
 
-@import 'modules/_vars.scss';
-@import 'modules/_layout.scss';
-@import 'modules/_grid.scss';
-@import 'modules/_forms.scss';
-@import 'modules/_misc.scss';
-@import 'modules/_helpers.scss';
-@import 'modules/_clearfix.scss';
-@import 'modules/_defaults.scss';
+@import 'globals/_vars.scss';
+@import 'layouts/_layout.scss';
+@import 'layouts/_grid.scss';
+@import 'helpers/_misc.scss';
+@import 'helpers/_helpers.scss';
+@import 'helpers/_clearfix.scss';
+@import 'components/_forms.scss';
+@import 'globals/_defaults.scss';
 
 
 //----------------------------------*\
 // SCSS MIXINS
 //----------------------------------*/
 
-@import 'modules/_selection.scss';
+@import 'helpers/_selection.scss';
 
 
 //----------------------------------*\
-// PARTIALS
+// MODULES
 //----------------------------------*/
 
-@import 'partials/_header.scss';
-@import 'partials/_sidebar.scss';
-@import 'partials/_footer.scss';
+@import 'modules/_header.scss';
+@import 'modules/_sidebar.scss';
+@import 'modules/_footer.scss';
 
 
 //----------------------------------*\
@@ -48,16 +48,16 @@
 // OBJECTS & MODULES
 //----------------------------------*/
 
-@import 'modules/_buttons.scss';
+@import 'components/_buttons.scss';
 
 // Enhancement modules
-@import 'modules/_breakpoints.scss';
-@import 'modules/_retina-images.scss';
-@import 'modules/_print.scss';
+@import 'globals/_breakpoints.scss';
+@import 'globals/_retina-images.scss';
+@import 'globals/_print.scss';
 
 
 //----------------------------------*\
 // MISC.
 //----------------------------------*/
 
-@import 'html5blank.css';
+@import 'globals/wp-styles.css';

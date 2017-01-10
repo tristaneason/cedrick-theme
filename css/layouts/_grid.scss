@@ -92,7 +92,7 @@ $gutterLarge: 7%;
 	}
 }
 
-.gutter-none {
+.gutter--none {
 	$gutter: $gutterNone;
 
 	@for $cols from 2 through 12 {
@@ -112,7 +112,7 @@ $gutterLarge: 7%;
 	}
 }
 
-.gutter-l {
+.gutter--l {
 	$gutter: $gutterLarge;
 
 	@for $cols from 2 through 12 {
