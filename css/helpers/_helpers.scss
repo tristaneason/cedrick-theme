@@ -17,10 +17,6 @@
 	transition: all 1s ease;
 }
 
-@mixin hoverTrans($property, $duration, $easing, $delay) {
-	transition: $property $duration $easing $delay;
-}
-
 @mixin hoverFade($fadeOpacity) {
 	opacity: $fadeOpacity;
 }
