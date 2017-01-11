@@ -15,11 +15,10 @@
    <body>
       <div class="wrapper">
 
-
          <div class="container well">
             <h1 class="pattern-section-heading">Grid System</h1>
 
-            <p>row_of_2 / gutter</p>
+            <h2 class="pattern-section-sub-heading">row_of_2 / gutter</h2>
             <div class="grid-group pattern-test-grid gutter row_of_2">
                <div class="col span_6_of_12"></div>
                <div class="col span_6_of_12"></div>
@@ -28,7 +27,7 @@
             </div>
 
             <br>
-            <p>row_of_3 / gutter--l</p>
+            <h2 class="pattern-section-sub-heading">row_of_3 / gutter--l</h2>
             <div class="grid-group pattern-test-grid gutter--l row_of_3">
                <div class="col span_4_of_12"></div>
                <div class="col span_4_of_12"></div>
@@ -39,7 +38,7 @@
             </div>
 
             <br>
-            <p>row_of_4 / gutter--none</p>
+            <h2 class="pattern-section-sub-heading">row_of_4 / gutter--none</h2>
             <div class="grid-group pattern-test-grid gutter--none row_of_4">
                <div class="col span_3_of_12"></div>
                <div class="col span_3_of_12"></div>
@@ -52,7 +51,7 @@
             </div>
 
             <br>
-            <p>row_of_5</p>
+            <h2 class="pattern-section-sub-heading">row_of_5</h2>
             <div class="grid-group pattern-test-grid gutter row_of_5">
                <div class="col span_2_of_10"></div>
                <div class="col span_2_of_10"></div>
@@ -67,7 +66,7 @@
             </div>
 
             <br>
-            <p>row_of_6</p>
+            <h2 class="pattern-section-sub-heading">row_of_6</h2>
             <div class="grid-group pattern-test-grid gutter row_of_6">
                <div class="col span_2_of_12"></div>
                <div class="col span_2_of_12"></div>
@@ -84,27 +83,28 @@
             </div>
          </div>
 
+
          <hr>
          <div class="container well">
             <h1 class="pattern-section-heading">Buttons</h1>
 
             <div class="">
                <h2 class="pattern-section-sub-heading">Regular Buttons</h2>
-               <a href="#" class="btn">Button Text</a> <a href="#" class="btn btn--primary">Primary Button</a> <a href="#" class="btn btn--secondary">Secondary Button</a>
+               <a href="#" class="btn">Button Text</a> <a href="#" class="btn btn--primary">Primary Button</a> <a href="#" class="btn btn--secondary">Secondary Button</a> <a href="#" class="btn btn--tertiary">Tertiary Button</a>
             </div>
 
             <br>
 
             <div class="">
                <h2 class="pattern-section-sub-heading">Ghost Buttons</h2>
-               <a href="#" class="btn btn--ghost">Ghost Button</a> <a href="#" class="btn btn--ghost btn--primary">Primary Ghost</a> <a href="#" class="btn btn--ghost btn--secondary">Secondary Ghost</a>
+               <a href="#" class="btn btn--ghost">Ghost Button</a> <a href="#" class="btn btn--ghost btn--primary">Primary Ghost</a> <a href="#" class="btn btn--ghost btn--secondary">Secondary Ghost</a> <a href="#" class="btn btn--ghost btn--tertiary">Tertiary Ghost</a>
             </div>
 
             <br>
 
             <div class="">
                <h2 class="pattern-section-sub-heading">Button Sizing</h2>
-               <a href="#" class="btn">Regular Button</a> <a href="#" class="btn btn--l btn--primary">Big Button</a> <a href="#" class="btn btn--s btn--secondary">Small Button</a>
+               <a href="#" class="btn btn--s">Small Button</a> <a href="#" class="btn">Regular Button</a> <a href="#" class="btn btn--l">Big Button</a>
             </div>
 
             <br>
@@ -112,23 +112,149 @@
 
             <div class="center-btns">
                <h2 class="pattern-section-sub-heading">Centered Buttons</h2>
-               <a href="#" class="btn">Button Text</a> <a href="#" class="btn btn--primary">Primary Button</a> <a href="#" class="btn btn--secondary">Secondary Button</a>
+               <a href="#" class="btn btn--l btn--primary">Main Button</a> <a href="#" class="btn btn--ghost btn--l btn--primary">Other Button</a>
             </div>
          </div>
 
+
          <hr>
          <div class="container well">
-            <h1 class="pattern-section-heading">Overlays</h1>
+            <h1 class="pattern-section-heading">Section Background Color Status</h1>
+            <div class="pattern-section-description">
+               <p>This comes in handy, when you want to specify the color or shade of a background, and have the overlying text change color to keep it readable.</p>
+            </div>
 
-            <div class="hasOverlay">
-               <div class="overlay"></div>
-               <div class="overlay-content">
-                  Content goes in here
+            <div class="isDarkGray">
+               <div class="inner" style="padding: 5%;">
+                  <p>.isDarkGray  -  This is a dark gray box with light text on top.<br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+               </div>
+            </div>
+
+            <div class="isLightGray">
+               <div class="inner" style="padding: 5%;">
+                  <p>.isLightGray  -  This is a light gray box with dark text on top.<br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+               </div>
+            </div>
+
+            <div class="isPrimary">
+               <div class="inner" style="padding: 5%;">
+                  <p>.isPrimary  -  This is a primary colored box with light text on top.<br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+               </div>
+            </div>
+
+            <div class="isSecondary">
+               <div class="inner" style="padding: 5%;">
+                  <p>.isSecondary  -  This is a secondary colored box with dark text on top.<br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
                </div>
             </div>
          </div>
 
 
-      </div>
+         <hr>
+         <div class="container well">
+            <h1 class="pattern-section-heading">Overlays</h1>
+
+            <div class="grid-group gutter row_of_4">
+               <div class="hasOverlay col span_4_of_12" style="background-image: url('https://source.unsplash.com/category/nature/800x800'); background-size: cover; background-repeat: no-repeat;">
+                  <div class="overlay"></div>
+                  <div class="overlay-content">
+                     <div class="inner">
+                        <p>Here's a 30% opacity overlay<br />
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="hasOverlay col span_4_of_12" style="background-image: url('https://source.unsplash.com/category/nature/800x800'); background-size: cover; background-repeat: no-repeat;">
+                  <div class="overlay overlay--5"></div>
+                  <div class="overlay-content">
+                     <div class="inner">
+                        <p>Here's a 50% opacity overlay<br />
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="hasOverlay col span_4_of_12" style="background-image: url('https://source.unsplash.com/category/nature/800x800'); background-size: cover; background-repeat: no-repeat;">
+                  <div class="overlay overlay--75"></div>
+                  <div class="overlay-content">
+                     <div class="inner">
+                        <p>Here's a 75% opacity overlay<br />
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <hr>
+         <div class="container well">
+            <h1 class="pattern-section-heading">Hover Zoom / Fade</h1>
+
+            <div class="grid-group gutter row_of_4">
+               <div class="hasHoverFade col span_4_of_12">
+                  <div class="bg-img" style="background-image: url('https://source.unsplash.com/category/nature/800x900'); background-size: cover; background-repeat: no-repeat;"></div>
+                  <div class="inner" style="padding: 10%; position: relative; color: #FFF; background-color: rgba(0,0,0, 0.4);">
+                     <p>Hover to see it FADE<br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                  </div>
+               </div>
+
+               <div class="hasHoverZoom col span_4_of_12">
+                  <div class="bg-img" style="background-image: url('https://source.unsplash.com/category/nature/800x900'); background-size: cover; background-repeat: no-repeat;"></div>
+                  <div class="inner" style="padding: 10%; position: relative; color: #FFF; background-color: rgba(0,0,0, 0.4);">
+                     <p>Hover to see it ZOOM<br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                  </div>
+               </div>
+
+               <div class="hasHoverZoomFade col span_4_of_12">
+                  <div class="bg-img" style="background-image: url('https://source.unsplash.com/category/nature/800x900'); background-size: cover; background-repeat: no-repeat;"></div>
+                  <div class="inner" style="padding: 10%; position: relative; color: #FFF; background-color: rgba(0,0,0, 0.4);">
+                     <p>Hover to see it ZOOM &amp; FADE!<br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <hr>
+         <div class="container well">
+            <h1 class="pattern-section-heading">Border Radius</h1>
+
+            <div class="grid-group pattern-test-grid gutter row_of_4">
+               <div class="element-with-equal-border-radius col span_3_of_12">
+                  <div class="inner" style="padding: 5%;">
+                     <p>Sass mixin example...<br>.element-with-equal-border-radius</p>
+                  </div>
+               </div>
+
+               <div class="element-with-different-top-bottom col span_3_of_12">
+                  <div class="inner" style="padding: 5%;">
+                     <p>Sass mixin example...<br>.element-with-different-top-bottom</p>
+                  </div>
+               </div>
+
+               <div class="element-with-different-left-right col span_3_of_12">
+                  <div class="inner" style="padding: 5%;">
+                     <p>Sass mixin example...<br>.element-with-different-left-right</p>
+                  </div>
+               </div>
+
+               <div class="element-with-custom-border-radius col span_3_of_12">
+                  <div class="inner" style="padding: 5%;">
+                     <p>Sass mixin example...<br>.element-with-custom-border-radius</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div><!-- /.wrapper -->
    </body>
 </html>

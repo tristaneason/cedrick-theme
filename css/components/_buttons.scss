@@ -8,6 +8,7 @@
    font-size: 16px;
    padding: 12px 20px;
    display: inline-block;
+   @extend %hoverTrans;
 
    &.btn--primary {
       background-color: $primary;
@@ -15,6 +16,10 @@
 
    &.btn--secondary {
       background-color: $secondary;
+   }
+
+   &.btn--tertiary {
+      background-color: $tertiary;
    }
 
    &:hover {
@@ -27,22 +32,31 @@
       &.btn--secondary {
          background-color: lighten($secondary, 10%);
       }
+
+      &.btn--tertiary {
+         background-color: lighten($tertiary, 10%);
+      }
    }
 
 
    &.btn--ghost {
       color: $black;
       background-color: transparent;
-      border: 2px solid $black;
+      box-shadow: inset 0px 0px 0px 2px $black;
 
       &.btn--primary {
          color: $primary;
-         border-color: $primary;
+         box-shadow: inset 0px 0px 0px 2px $primary;
       }
 
       &.btn--secondary {
          color: $secondary;
-         border-color: $secondary;
+         box-shadow: inset 0px 0px 0px 2px $secondary;
+      }
+
+      &.btn--tertiary {
+         color: $tertiary;
+         box-shadow: inset 0px 0px 0px 2px $tertiary;
       }
 
       &:hover {
@@ -55,6 +69,10 @@
 
          &.btn--secondary {
             background-color: $secondary;
+         }
+
+         &.btn--tertiary {
+            background-color: $tertiary;
          }
       }
    }

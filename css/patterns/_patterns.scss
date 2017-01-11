@@ -4,7 +4,7 @@
 
 	.col {
 		background: gray;
-		height: 20px;
+		min-height: 20px;
 		box-shadow: inset 0 0 1px black;
 	}
 }
@@ -18,6 +18,11 @@
 }
 
 .pattern-section-sub-heading {
+	font-size: 1.3em;
+	margin-bottom: 16px;
+}
+
+.pattern-section-description {
 	font-size: 1em;
 	margin-bottom: 16px;
 }

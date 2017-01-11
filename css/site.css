@@ -1138,11 +1138,26 @@ th {
   position: relative;
   visibility: hidden;
   /* <- needed to hide flash of non vertical aligned content before complete page load. */ }
-  .vAlign.vAlign-abs {
-    position: absolute;
-    visibility: hidden;
-    /* <- needed to hide flash of non vertical aligned content before complete page load. */ }
 
+.vAlign-abs {
+  position: absolute;
+  visibility: hidden;
+  /* <- needed to hide flash of non vertical aligned content before complete page load. */ }
+
+.hasHoverFade .bg-img, .btn {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+/*
+USAGE EXAMPLE
+.element {
+	@extend %hoverTrans;
+
+	&:hover {
+		@include hoverFade(0.7);
+	}
+}
+*/
 .noWrap {
   white-space: nowrap; }
 
@@ -1152,7 +1167,7 @@ th {
   display: block;
   cursor: pointer; }
 
-.hasOverlay .overlay {
+.hasOverlay .overlay, .hasHoverFade .bg-img, .hasHoverZoom .bg-img, .hasHoverZoomFade .bg-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -1161,23 +1176,126 @@ th {
   width: 100%;
   height: 100%; }
 
+.hasHoverFade .bg-img, .hasHoverZoom .bg-img, .hasHoverZoomFade .bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.hasHoverFade .bg-img, .hasHoverZoom .bg-img, .hasHoverZoomFade .bg-img {
+  background-position: center center; }
+
+.isDarkGray {
+  color: #fff;
+  background-color: #353333; }
+
+.isLightGray {
+  color: #000;
+  background-color: #f6f6f6; }
+
+.isPrimary {
+  color: #fff;
+  background-color: #4ca2d6; }
+
+.isSecondary {
+  color: #000;
+  background-color: #eed31e; }
+
 .hasOverlay {
   position: relative;
   z-index: 1; }
   .hasOverlay .overlay {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2; }
+    .hasOverlay .overlay.overlay--5 {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .hasOverlay .overlay.overlay--75 {
+      background-color: rgba(0, 0, 0, 0.75); }
   .hasOverlay .overlay-content {
-    position: absolute;
-    z-index: 3; }
+    position: relative;
+    z-index: 3;
+    color: #fff; }
+    .hasOverlay .overlay-content .inner {
+      padding: 10%; }
+
+.hasHoverFade {
+  position: relative; }
+  .hasHoverFade:hover .bg-img {
+    opacity: 0.6; }
+
+.hasHoverZoom {
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .hasHoverZoom .bg-img {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98), -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98); }
+  .hasHoverZoom:hover .bg-img {
+    -webkit-transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+            transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+    -webkit-transition: -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95), -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95); }
+
+.hasHoverZoomFade {
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .hasHoverZoomFade .bg-img {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: opacity 0.75s linear, -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: opacity 0.75s linear, -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: opacity 0.75s linear, transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98);
+    transition: opacity 0.75s linear, transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98), -webkit-transform 750ms cubic-bezier(0.255, 0.285, 0.42, 0.98); }
+  .hasHoverZoomFade:hover .bg-img {
+    opacity: 0.6;
+    -webkit-transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+            transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+    -webkit-transition: opacity 1.5s linear, -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: opacity 1.5s linear, -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: opacity 1.5s linear, transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
+    transition: opacity 1.5s linear, transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95), -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95); }
 
 /*
 USAGE EXAMPLE
 div.image {
 	background: url("image.png") no-repeat;
-	@include image-2x("image2x.png", 100px, 25px);
+	@include image-2x("../img/image2x.png", 100px, 25px);
+	// Image size would be 200x50 pixels, but would be displayed at 100x25 pixels on retina screen
 }
 */
+.element-with-equal-border-radius {
+  border-radius: 15px;
+  background-clip: padding-box; }
+
+.element-with-custom-border-radius {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0;
+  background-clip: padding-box; }
+
+.element-with-different-top-bottom {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-clip: padding-box;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box; }
+
+.element-with-different-left-right {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  background-clip: padding-box;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-clip: padding-box; }
+
 .wrapper, .container, .container--full, .container--l, .container--s, .gform_wrapper .gform_body,
 .gform_wrapper .gform_body ul, .footer {
   *zoom: 1; }
@@ -1289,22 +1407,29 @@ input:focus {
     background-color: #4ca2d6; }
   .btn.btn--secondary {
     background-color: #eed31e; }
+  .btn.btn--tertiary {
+    background-color: #f926a2; }
   .btn:hover {
     background-color: #1a1a1a; }
     .btn:hover.btn--primary {
       background-color: #75b8e0; }
     .btn:hover.btn--secondary {
       background-color: #f2dc4d; }
+    .btn:hover.btn--tertiary {
+      background-color: #fa58b7; }
   .btn.btn--ghost {
     color: #000;
     background-color: transparent;
-    border: 2px solid #000; }
+    box-shadow: inset 0px 0px 0px 2px #000; }
     .btn.btn--ghost.btn--primary {
       color: #4ca2d6;
-      border-color: #4ca2d6; }
+      box-shadow: inset 0px 0px 0px 2px #4ca2d6; }
     .btn.btn--ghost.btn--secondary {
       color: #eed31e;
-      border-color: #eed31e; }
+      box-shadow: inset 0px 0px 0px 2px #eed31e; }
+    .btn.btn--ghost.btn--tertiary {
+      color: #f926a2;
+      box-shadow: inset 0px 0px 0px 2px #f926a2; }
     .btn.btn--ghost:hover {
       color: #fff;
       background-color: #000; }
@@ -1312,6 +1437,8 @@ input:focus {
         background-color: #4ca2d6; }
       .btn.btn--ghost:hover.btn--secondary {
         background-color: #eed31e; }
+      .btn.btn--ghost:hover.btn--tertiary {
+        background-color: #f926a2; }
   .btn.btn--l {
     font-size: 22px;
     padding: 20px 40px; }
