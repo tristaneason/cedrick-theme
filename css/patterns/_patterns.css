@@ -3,9 +3,7 @@
   padding: 20px; }
   .pattern-test-grid .col {
     background: gray;
-    min-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    height: 20px;
     box-shadow: inset 0 0 1px black; }
 
 .pattern-section-heading {
@@ -14,11 +12,3 @@
   opacity: 0.5;
   margin-left: -1em;
   margin-bottom: 30px; }
-
-.pattern-section-sub-heading {
-  font-size: 1.3em;
-  margin-bottom: 16px; }
-
-.pattern-section-description {
-  font-size: 1em;
-  margin-bottom: 16px; }
