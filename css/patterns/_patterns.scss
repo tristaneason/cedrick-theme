@@ -5,8 +5,8 @@
 	.col {
 		background: gray;
 		min-height: 20px;
-   	margin-top: 5px;
-   	margin-bottom: 5px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		box-shadow: inset 0 0 1px black;
 	}
 }
@@ -27,4 +27,60 @@
 .pattern-section-description {
 	font-size: 1em;
 	margin-bottom: 16px;
+}
+
+
+
+// All corners with equal radius
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	background-clip: padding-box; // <- stops bg color from leaking outside the border
+}
+
+// Custom 4-corner radius
+@mixin border-radius-custom($topRight, $bottomRight, $bottomLeft, $topLeft) {
+	border-top-right-radius: $topRight;
+	border-bottom-right-radius: $bottomRight;
+	border-bottom-left-radius: $bottomLeft;
+	border-top-left-radius: $topLeft;
+	background-clip: padding-box; // <- stops bg color from leaking outside the border
+}
+
+// Single side border-radius
+@mixin border-top-radius($radius) {
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-top-right-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+	border-bottom-left-radius: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+
+.element-with-equal-border-radius {
+	@include border-radius(15px);
+}
+
+.element-with-custom-border-radius {
+	@include border-radius-custom(25px, 50px, 10px, 0);
+}
+
+.element-with-different-top-bottom {
+	@include border-top-radius(50px);
+	@include border-bottom-radius(0);
+}
+.element-with-different-left-right {
+	@include border-right-radius(50px);
+	@include border-left-radius (0);
 }
