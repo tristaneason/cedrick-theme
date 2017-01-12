@@ -20,16 +20,6 @@
 @mixin hoverFade($fadeOpacity) {
 	opacity: $fadeOpacity;
 }
-/*
-USAGE EXAMPLE
-.element {
-	@extend %hoverTrans;
-
-	&:hover {
-		@include hoverFade(0.7);
-	}
-}
-*/
 
 
 // NO TEXT WORD-WRAPPING - - - - - - -

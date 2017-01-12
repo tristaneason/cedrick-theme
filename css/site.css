@@ -1202,16 +1202,6 @@ th {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-/*
-USAGE EXAMPLE
-.element {
-	@extend %hoverTrans;
-
-	&:hover {
-		@include hoverFade(0.7);
-	}
-}
-*/
 .noWrap {
   white-space: nowrap; }
 
