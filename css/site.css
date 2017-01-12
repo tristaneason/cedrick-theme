@@ -1315,41 +1315,6 @@ USAGE EXAMPLE
     transition: opacity 1.5s linear, transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95);
     transition: opacity 1.5s linear, transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95), -webkit-transform 6000ms cubic-bezier(0.235, 0.07, 0.67, 0.95); }
 
-/*
-USAGE EXAMPLE
-div.image {
-	background: url("image.png") no-repeat;
-	@include image-2x("../img/image2x.png", 100px, 25px);
-	// Image size would be 200x50 pixels, but would be displayed at 100x25 pixels on retina screen
-}
-*/
-.element-with-equal-border-radius {
-  border-radius: 15px;
-  background-clip: padding-box; }
-
-.element-with-custom-border-radius {
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 0;
-  background-clip: padding-box; }
-
-.element-with-different-top-bottom {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  background-clip: padding-box;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background-clip: padding-box; }
-
-.element-with-different-left-right {
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  background-clip: padding-box;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  background-clip: padding-box; }
-
 .wrapper, .container, .container--full, .container--l, .container--s, .gform_wrapper .gform_body,
 .gform_wrapper .gform_body ul, .footer {
   *zoom: 1; }

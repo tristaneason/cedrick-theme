@@ -22,3 +22,30 @@
 .pattern-section-description {
   font-size: 1em;
   margin-bottom: 16px; }
+
+.element-with-equal-border-radius {
+  border-radius: 15px;
+  background-clip: padding-box; }
+
+.element-with-custom-border-radius {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0;
+  background-clip: padding-box; }
+
+.element-with-different-top-bottom {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-clip: padding-box;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box; }
+
+.element-with-different-left-right {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  background-clip: padding-box;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-clip: padding-box; }

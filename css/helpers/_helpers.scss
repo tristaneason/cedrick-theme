@@ -192,14 +192,6 @@ USAGE EXAMPLE
 		background-size: $width $height; // <- normal display or "half-of-retina" dimensions
 	}
 }
-/*
-USAGE EXAMPLE
-div.image {
-	background: url("image.png") no-repeat;
-	@include image-2x("../img/image2x.png", 100px, 25px);
-	// Image size would be 200x50 pixels, but would be displayed at 100x25 pixels on retina screen
-}
-*/
 
 
 // BORDER RADIUS - - - - - - -
@@ -239,22 +231,3 @@ div.image {
 	border-top-left-radius: $radius;
 	background-clip: padding-box;
 }
-// /*
-// USAGE EXAMPLE
-.element-with-equal-border-radius {
-	@include border-radius(15px);
-}
-
-.element-with-custom-border-radius {
-	@include border-radius-custom(25px, 50px, 10px, 0);
-}
-
-.element-with-different-top-bottom {
-	@include border-top-radius(50px);
-	@include border-bottom-radius(0);
-}
-.element-with-different-left-right {
-	@include border-right-radius(50px);
-	@include border-left-radius (0);
-}
-// */
