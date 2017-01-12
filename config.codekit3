@@ -225,6 +225,12 @@
 		"oAP": "\/css\/.sass-cache\/9c081a72ed1a7591245ffeb859d1672c169d5d47\/normalize.scssc",
 		"oF": 0
 		},
+	"\/css\/.sass-cache\/a758d447b029402b3bf3a4d1e2c1f365ce99e0ac\/_cards.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/.sass-cache\/a758d447b029402b3bf3a4d1e2c1f365ce99e0ac\/_cards.scssc",
+		"oF": 0
+		},
 	"\/css\/.sass-cache\/a758d447b029402b3bf3a4d1e2c1f365ce99e0ac\/_grid.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -435,6 +441,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/layouts\/_cards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 0
+		},
+	"\/css\/layouts\/_flexbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/layouts\/_flexbox.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0

@@ -1134,6 +1134,46 @@ th {
   .card .inner {
     padding: 12% 0; }
 
+.flex-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .flex-group .flex {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .flex-group.flex-margin .flex {
+    margin-left: 1.6%; }
+  .flex-group.flex-margin--l .flex {
+    margin-left: 7%; }
+  .flex-group.flex-margin--none .flex {
+    margin-left: 0%; }
+  .flex-group.row_of_2 .flex {
+    width: 50%; }
+  .flex-group.row_of_2 .flex:nth-child(2n+1) {
+    margin-left: 0; }
+  .flex-group.row_of_3 .flex {
+    width: 33.33%; }
+  .flex-group.row_of_3 .flex:nth-child(3n+1) {
+    margin-left: 0; }
+  .flex-group.row_of_4 .flex {
+    width: 25%; }
+  .flex-group.row_of_4 .flex:nth-child(4n+1) {
+    margin-left: 0; }
+  .flex-group.row_of_5 .flex {
+    width: 20%; }
+  .flex-group.row_of_5 .flex:nth-child(5n+1) {
+    margin-left: 0; }
+  .flex-group.row_of_6 .flex {
+    width: 16.66%; }
+  .flex-group.row_of_6 .flex:nth-child(6n+1) {
+    margin-left: 0; }
+
 .bx-wrapper {
   margin-bottom: 0; }
 
