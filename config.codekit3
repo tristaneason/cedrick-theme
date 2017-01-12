@@ -159,6 +159,12 @@
 		"oAP": "\/css\/.sass-cache\/ded82b2da8226c9dd679a62bdacf3f1b28764c41\/_cards.scssc",
 		"oF": 0
 		},
+	"\/css\/.sass-cache\/ded82b2da8226c9dd679a62bdacf3f1b28764c41\/_flexbox.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/css\/.sass-cache\/ded82b2da8226c9dd679a62bdacf3f1b28764c41\/_flexbox.scssc",
+		"oF": 0
+		},
 	"\/css\/.sass-cache\/ded82b2da8226c9dd679a62bdacf3f1b28764c41\/_grid.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -460,7 +466,7 @@
 		"oS": 0,
 		"uL": 0
 		},
-	"\/css\/modules\/_sidebar.scss": {
+	"\/css\/modules\/_menu.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -468,7 +474,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/modules\/_sidebar.css",
+		"oAP": "\/css\/modules\/_menu.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
