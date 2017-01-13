@@ -12,67 +12,67 @@ $flexLarge: $gutterLarge;
 //specific to flex by uncommenting the above lines
 
 .flex-group {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-   .flex {
-      flex: 1;
-   }
+	.flex {
+		flex: 1;
+	}
 
-   &.flex-margin .flex {
-      margin-left: $gutterBase;
-   }
-   &.flex-margin--l .flex {
-      margin-left: $gutterLarge;
-   }
-   &.flex-margin--none .flex {
-      margin-left: $gutterNone;
-   }
+	&.flex-margin .flex {
+		margin-left: $flexBase;
+	}
+	&.flex-margin--l .flex {
+		margin-left: $flexLarge;
+	}
+	&.flex-margin--none .flex {
+		margin-left: $flexNone;
+	}
 
 	&.row_of_2 {
-      .flex {
-         width: 50%;
-      }
+		.flex {
+			width: 50%;
+		}
 
-      .flex:nth-child(2n+1) {
-   		margin-left: 0;
-      }
+		.flex:nth-child(2n+1) {
+			margin-left: 0;
+		}
 	}
 	&.row_of_3 {
-      .flex {
-         width: 33.33%;
-      }
+		.flex {
+			width: 33.33%;
+		}
 
-      .flex:nth-child(3n+1) {
-   		margin-left: 0;
-      }
+		.flex:nth-child(3n+1) {
+			margin-left: 0;
+		}
 	}
 	&.row_of_4 {
-      .flex {
-         width: 25%;
-      }
+		.flex {
+			width: 25%;
+		}
 
-      .flex:nth-child(4n+1) {
-   		margin-left: 0;
-      }
+		.flex:nth-child(4n+1) {
+			margin-left: 0;
+		}
 	}
 	&.row_of_5 {
-      .flex {
-         width: 20%;
-      }
+		.flex {
+			width: 20%;
+		}
 
-      .flex:nth-child(5n+1) {
-   		margin-left: 0;
-      }
+		.flex:nth-child(5n+1) {
+			margin-left: 0;
+		}
 	}
 	&.row_of_6 {
-      .flex {
-         width: 16.66%;
-      }
+		.flex {
+			width: 16.66%;
+		}
 
-      .flex:nth-child(6n+1) {
-   		margin-left: 0;
-      }
+		.flex:nth-child(6n+1) {
+			margin-left: 0;
+		}
 	}
 }
