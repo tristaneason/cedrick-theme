@@ -169,5 +169,39 @@
 		waypointInit();
 
 
+
+
+		// MAKE SURE TO ADD ANY NEW LIBRARIES TO THIS INIT FUNCTION - - - - - - -
+		var libsInit = function() {
+         vAlignShow();
+         vAlignFun();
+         aosInit();
+
+         $.stellar('destroy');
+         setTimeout(function(){
+            stellarJsInit();
+         }, 200);
+
+         bxInit();
+         screenSizeCalc();
+         smoothScroll();
+
+         setTimeout(function(){
+            Waypoint.refreshAll();
+            waypointInit();
+         }, 200);
+
+         $(window).resize(function() {
+            vAlignFun();
+            screenSizeCalc();
+         }).resize();
+
+         // Listen for resize changes (mobile orientation change)
+         window.addEventListener("resize", function() {
+            vAlignFun();
+         }, false);
+		};
+
+
 	});
 })(jQuery, window);

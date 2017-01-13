@@ -6,33 +6,9 @@
          //Be sure to put all intializations on the allInits Variable and call it at the last step of your transitions!
       // =================================================================
       var allInits = function() {
-         vAlignShow();
-         vAlignFun();
-         aosInit();
-
-         $.stellar('destroy');
-         setTimeout(function(){
-            stellarJsInit();
-         }, 200);
-
-         bxInit();
-         screenSizeCalc();
-         smoothScroll();
-
-         setTimeout(function(){
-            Waypoint.refreshAll();
-            waypointInit();
-         }, 200);
-
-         $(window).resize(function() {
-            vAlignFun();
-            screenSizeCalc();
-         }).resize();
-
-         // Listen for resize changes (mobile orientation change)
-         window.addEventListener("resize", function() {
-            vAlignFun();
-         }, false);
+         libsInit();
+         globalsInit();
+         interactiveInit();
       };
 
       //barbr.js PJAX Stuff
