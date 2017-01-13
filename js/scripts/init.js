@@ -116,7 +116,7 @@
 
 
 
-		// Hero / FullScreen
+		// Screen Size Calculations
 		var vpHeight;
 		var screenSizeCalc = function(){
 			vpHeight = $(window).height();
