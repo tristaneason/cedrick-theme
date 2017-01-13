@@ -405,19 +405,6 @@
 		"oS": 0,
 		"uL": 0
 		},
-	"\/css\/helpers\/_helpers.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/helpers\/_helpers.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 0
-		},
 	"\/css\/helpers\/_misc.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -453,19 +440,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/layouts\/_cards.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 0
-		},
-	"\/css\/layouts\/_flexbox.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/layouts\/_flexbox.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 0
@@ -645,22 +619,6 @@
 		"oAP": "\/css\/patterns\/patterns-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/css\/site.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/site-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/site.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/site.css.map",
-		"oF": 0
 		},
 	"\/css\/site.scss": {
 		"aP": 1,
@@ -2393,7 +2351,7 @@
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "FastClick, Promise, Waypoint, Barba, vAlignShow, vAlignFun, aosInit, stellarJsInit, bxInit, screenSizeCalc, smoothScroll, refreshAll, waypointInit, vAlignFun, screenSizeCalc",
+	"jsCheckerReservedNamesString": "FastClick, Promise, Waypoint, Barba, vAlignShow, vAlignFun, aosInit, stellarJsInit, bxInit, screenSizeCalc, smoothScroll, refreshAll, waypointInit, vAlignFun, screenSizeCalc, libsInit, globalsInit, interactiveInit",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
