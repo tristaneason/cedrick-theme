@@ -174,6 +174,7 @@
 
 
 		// MAKE SURE TO ADD ANY NEW LIBRARIES TO THIS INIT FUNCTION - - - - - - -
+		/* jshint ignore:start */
 		var libsInit = function() {
 			vAlignShow();
 			vAlignFun();
@@ -203,6 +204,7 @@
 				vAlignFun();
 			}, false);
 		};
+		/* jshint ignore:end */
 
 
 	});
