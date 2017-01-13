@@ -17,8 +17,10 @@
 		// =================================================================
 
 
-		// Helps mobile/touch devices to "click" faster
-		FastClick.attach(document.body);
+		if ($('html').hasClass('touch')) {
+			// Helps mobile/touch devices to "click" faster
+			FastClick.attach(document.body);
+		}
 
 
 
