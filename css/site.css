@@ -1292,20 +1292,22 @@ th {
 .hasHoverFade .bg-img, .hasHoverZoom .bg-img, .hasHoverZoomFade .bg-img {
   background-position: center center; }
 
+.bgIsDark {
+  color: #fff; }
+
+.bgIsLight {
+  color: #000; }
+
 .isDarkGray {
-  color: #fff;
   background-color: #353333; }
 
 .isLightGray {
-  color: #000;
   background-color: #f6f6f6; }
 
 .isPrimary {
-  color: #fff;
   background-color: #4ca2d6; }
 
 .isSecondary {
-  color: #000;
   background-color: #eed31e; }
 
 .hasOverlay {

@@ -134,23 +134,27 @@
 
 
 // BACKGROUND COLOR STATUS - - - - - - -
-.isDarkGray {
+.bgIsDark {
 	color: $white;
+}
+
+.bgIsLight {
+	color: $black;
+}
+
+.isDarkGray {
 	background-color: $darkGray;
 }
 
 .isLightGray {
-	color: $black;
 	background-color: $lightGray;
 }
 
 .isPrimary {
-	color: $white;
 	background-color: $primary;
 }
 
 .isSecondary {
-	color: $black;
 	background-color: $secondary;
 }
 
