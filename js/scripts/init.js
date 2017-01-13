@@ -173,33 +173,33 @@
 
 		// MAKE SURE TO ADD ANY NEW LIBRARIES TO THIS INIT FUNCTION - - - - - - -
 		var libsInit = function() {
-         vAlignShow();
-         vAlignFun();
-         aosInit();
+			vAlignShow();
+			vAlignFun();
+			aosInit();
 
-         $.stellar('destroy');
-         setTimeout(function(){
-            stellarJsInit();
-         }, 200);
+			$.stellar('destroy');
+			setTimeout(function(){
+				stellarJsInit();
+			}, 200);
 
-         bxInit();
-         screenSizeCalc();
-         smoothScroll();
+			bxInit();
+			screenSizeCalc();
+			smoothScroll();
 
-         setTimeout(function(){
-            Waypoint.refreshAll();
-            waypointInit();
-         }, 200);
+			setTimeout(function(){
+				Waypoint.refreshAll();
+				waypointInit();
+			}, 200);
 
-         $(window).resize(function() {
-            vAlignFun();
-            screenSizeCalc();
-         }).resize();
+			$(window).resize(function() {
+				vAlignFun();
+				screenSizeCalc();
+			}).resize();
 
-         // Listen for resize changes (mobile orientation change)
-         window.addEventListener("resize", function() {
-            vAlignFun();
-         }, false);
+			// Listen for resize changes (mobile orientation change)
+			window.addEventListener("resize", function() {
+				vAlignFun();
+			}, false);
 		};
 
 
