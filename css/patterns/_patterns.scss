@@ -29,6 +29,23 @@
 	margin-bottom: 16px;
 }
 
+.pattern-test-hideShow {
+	padding: 5px;
+
+	.col {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 12px;
+
+		.hasOverlay {
+			padding: 10px;
+			border-radius: 2px;
+		}
+	}
+}
+
 
 
 // All corners with equal radius

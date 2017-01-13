@@ -23,6 +23,18 @@
   font-size: 1em;
   margin-bottom: 16px; }
 
+.pattern-test-hideShow {
+  padding: 5px; }
+  .pattern-test-hideShow .col {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px; }
+    .pattern-test-hideShow .col .hasOverlay {
+      padding: 10px;
+      border-radius: 2px; }
+
 .element-with-equal-border-radius {
   border-radius: 15px;
   background-clip: padding-box; }
