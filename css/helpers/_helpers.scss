@@ -43,6 +43,80 @@
 }
 
 
+//	SHOW / HIDE STUFF! - - - - - - -
+.isHidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+.isVisible {
+	display: block !important;
+	visibility: visible !important;
+}
+.isHidden--desktop {
+	display: none;
+	visibility: hidden;
+}
+.isVisible--desktop {
+	display: block;
+	visibility: visible;
+}
+.isHidden--tablet {
+	display: block;
+	visibility: visible;
+}
+.isVisible--tablet {
+	display: none;
+	visibility: hidden;
+}
+.isHidden--mobile {
+	display: block;
+	visibility: visible;
+}
+.isVisible--mobile {
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (max-width:1024px) {
+	.isVisible--tablet {
+		display: block;
+		visibility: visible;
+	}
+	.isHidden--tablet {
+		display: none;
+		visibility: hidden;
+	}
+
+	.isHidden--desktop {
+		display: block;
+		visibility: visible;
+	}
+	.isVisible--desktop {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (max-width:768px) {
+	.isVisible--tablet {
+		display: none;
+		visibility: hidden;
+	}
+	.isHidden--tablet {
+		display: block;
+		visibility: visible;
+	}
+	.isHidden--mobile {
+		display: none;
+		visibility: hidden;
+	}
+	.isVisible--mobile {
+		display: block;
+		visibility: visible;
+	}
+
+}
+
+
+
 // BACKGROUND IMAGE SIZE/POSITION - - - - - - -
 %bgCover {
 	background-size: cover;
