@@ -647,11 +647,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/libs\/jquery.easings.min.js": {
+	"\/js\/libs\/jquery.easing.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/js\/libs\/jquery.easings.min-min.js",
+		"oAP": "\/js\/libs\/jquery.easing.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

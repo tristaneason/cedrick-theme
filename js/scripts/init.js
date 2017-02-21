@@ -1,11 +1,11 @@
 // @codekit-prepend "../libs/modernizr.js"
 // @codekit-prepend "../libs/jquery.bxslider.min.js"
 // @codekit-prepend "../libs/fastclick.js"
-// @codekit-prepend "../libs/jquery.easings.min.js"
 // @codekit-prepend "../libs/aos.js"
 // @codekit-prepend "../libs/jquery.stellar.min.js"
 // @codekit-prepend "../libs/barba.min.js"
 // @codekit-prepend "../libs/jquery.waypoints.min.js"
+// @codekit-prepend "../libs/jquery.easing.min.js"
 
 // DOM Ready
 (function($, window, undefined) {
