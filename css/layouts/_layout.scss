@@ -91,10 +91,12 @@ $well--s: 50px;
 	.pt--xl { padding-top: $well--xl; }
 	.pt--l { padding-top: $well--l; }
 	.pt--s { padding-top: $well--s; }
+	.pt--none { padding-top: 0; }
 
 	.pb--xl { padding-bottom: $well--xl; }
 	.pb--l { padding-bottom: $well--l; }
 	.pb--s { padding-bottom: $well--s; }
+	.pb--none { padding-bottom: 0; }
 }
 
 @media only screen and (max-width:1024px) {
@@ -111,10 +113,12 @@ $well--s: 50px;
 	.pt--xl { padding-top: $well--xl; }
 	.pt--l { padding-top: $well--l; }
 	.pt--s { padding-top: $well--s; }
+	.pt--none { padding-top: 0; }
 
 	.pb--xl { padding-bottom: $well--xl; }
 	.pb--l { padding-bottom: $well--l; }
 	.pb--s { padding-bottom: $well--s; }
+	.pb--none { padding-bottom: 0; }
 }
 
 @media only screen and (max-width:768px) {
@@ -131,10 +135,12 @@ $well--s: 50px;
 	.pt--xl { padding-top: $well--xl; }
 	.pt--l { padding-top: $well--l; }
 	.pt--s { padding-top: $well--s; }
+	.pt--none { padding-top: 0; }
 
 	.pb--xl { padding-bottom: $well--xl; }
 	.pb--l { padding-bottom: $well--l; }
 	.pb--s { padding-bottom: $well--s; }
+	.pb--none { padding-bottom: 0; }
 }
 @media only screen and (max-width:520px) {
 	$well: 13%;
@@ -150,8 +156,10 @@ $well--s: 50px;
 	.pt--xl { padding-top: $well--xl; }
 	.pt--l { padding-top: $well--l; }
 	.pt--s { padding-top: $well--s; }
+	.pt--none { padding-top: 0; }
 
 	.pb--xl { padding-bottom: $well--xl; }
 	.pb--l { padding-bottom: $well--l; }
 	.pb--s { padding-bottom: $well--s; }
+	.pb--none { padding-bottom: 0; }
 }
