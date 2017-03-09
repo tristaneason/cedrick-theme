@@ -33,11 +33,11 @@
 			(function ($) {
 			$.fn.vAlign = function() {
 				return this.each(function(){
-					var div = $(this).children('div.vAlign');
+					var el = $(this).children('.vAlign');
 					var ph = $(this).innerHeight();
-					var dh = div.height();
+					var dh = el.height();
 					var mh = (ph - dh) / 2;
-					div.css('top', mh);
+					el.css('top', mh);
 				});
 			};
 			})(jQuery);
