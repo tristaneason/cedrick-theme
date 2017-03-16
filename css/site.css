@@ -4352,7 +4352,8 @@ th {
 
 .hasHoverFade .bg-img, .btn {
   -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  -webkit-backface-visibility: hidden; }
 
 .noWrap {
   white-space: nowrap; }
