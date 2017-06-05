@@ -13,21 +13,21 @@
 		<h1>So here<span class="apostrophe">'</span>s<br />
 		<span class="highlight">The Scoop.</span></h1>
 	</div>
-		
+
 	<div class="about-slider">
-	<?php if(get_field('about_text_slides')): ?>
+	<?php if(get_field('about_text_slides')) { ?>
 		<ul class="about-content">
-		<?php while(the_repeater_field('about_text_slides')): ?>
+		<?php while(the_repeater_field('about_text_slides')) { ?>
 			<li>
 				<p><?php the_sub_field('about_text_slide'); ?></p>
 			</li>
-		<?php endwhile; ?>
+		<?php } ?>
 		</ul>
 
 		<div class="slider-controls">
 			<p><span class="about-slide-prev"></span><span class="about-slide-next"></span></p>
 		</div>
-	<?php endif; ?>
+	<?php } ?>
 
 	</div><!-- /.about-slider -->
 </div><!-- /.about-slider-wrapper -->
@@ -43,13 +43,14 @@
 
 
 <div class="team-wrapper">
-<?php if( have_rows('team_member_slides') ): ?>
+<?php if(have_rows('team_member_slides')) { ?>
 	<ul class="team-member-slider">
 
 	<?php
 		$team_member_index = 0;
-		while( have_rows('team_member_slides') ): the_row();
-		$team_member_index++; 
+		while(have_rows('team_member_slides')) {
+			the_row();
+		$team_member_index++;
 	?>
 		<li class="team-member team-member-<?php echo $team_member_index; ?>" data-team-member-index="<?php echo $team_member_index; ?>">
 			<aside class="bio-text">
@@ -58,27 +59,27 @@
 					<p><?php the_sub_field('team_member_bio'); ?></p>
 				</div>
 			</aside>
-		<?php if(get_sub_field('team_member_photos')): ?>
+		<?php if(get_sub_field('team_member_photos')) { ?>
 			<ul class="team-member-gallery">
-			<?php while(has_sub_field('team_member_photos')): ?>
+			<?php while(has_sub_field('team_member_photos')) { ?>
 				<li>
 					<?php $photo = wp_get_attachment_image_src(get_sub_field('team_member_photo'), 'full'); ?>
 					<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_the_title(get_field('team_member_photo')) ?>" />
 				</li>
-			<?php endwhile; ?>
+			<?php } ?>
 			</ul>
 			<div class="slider-controls gallery-pager">
 				<p><span class="gallery-prev-photo"></span><span class="gallery-next-photo"></span></p>
 			</div>
-		<?php endif; ?>
+		<?php } ?>
 		</li>
-	<?php endwhile; ?>
+	<?php } ?>
 
 	</ul><!-- /.team-member-slider -->
 	<div class="slider-controls">
 		<p><span class="team-slide-prev"></span><span class="team-slide-next"></span></p>
 	</div>
-<?php endif; ?>
+<?php } ?>
 </div><!-- /.team-wrapper -->
 
 
@@ -94,18 +95,19 @@
 			</div>
 		</aside>
 
-		<?php if( have_rows('office_gallery') ): ?>
+		<?php if(have_rows('office_gallery')) { ?>
 		<ul class="slider-office-gallery">
-			<?php while( have_rows('office_gallery') ): the_row(); ?>
+			<?php while(have_rows('office_gallery')) {
+				the_row(); ?>
 
 			<li>
 				<?php $image = wp_get_attachment_image_src(get_sub_field('office_photos'), 'full'); ?>
 				<img src="<?php echo $image[0]; ?>" alt="<?php  the_sub_field('title');?>" />
 			</li>
-		<?php endwhile; ?>
+		<?php } ?>
 		</ul>
-	<?php endif; ?>
-		
+	<?php } ?>
+
 		<div class="slider-controls col span_6_of_10">
 			<p><span class="office-slide-prev"></span><span class="office-slide-next"></span></p>
 		</div>
