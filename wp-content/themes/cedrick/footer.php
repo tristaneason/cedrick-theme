@@ -10,14 +10,14 @@
 			</div>
 
 			<div class="footer-copyright">
-				<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - All rights reserved</p>
+				<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> &mdash; All rights reserved</p>
 			</div>
-					
+
 		</footer>
 		<!-- /footer -->
 
 		<?php wp_footer(); ?>
-		
+
 		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
@@ -27,6 +27,6 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
-	
+
 	</body>
 </html>
