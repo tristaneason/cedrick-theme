@@ -1,18 +1,24 @@
+		<?php
+		// if(have_posts()) {
+		// 	while(have_posts()) {
+		// 		the_post();
+		function display_email() {
+			$email = the_field("email", "options");
+			echo $email;
+		}
+
+		?>
 		<!-- footer -->
-		<footer class="footer" role="contentinfo">
-
-			<div class="footer-social">
-				<ul>
-					<li class="fb"><a href="#">Fb</a></li>
-					<li class="twt"><a href="#">Twt</a></li>
-					<li class="gplus"><a href="#">G+</a></li>
-				</ul>
+		<footer class="footer" role="contact-info">
+			<div class="footer-left developer-container">
+				<a class="developer-link" target="_blank" href="http://harbr.co">Developed by Harbr Co.</a>
 			</div>
-
-			<div class="footer-copyright">
-				<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> &mdash; All rights reserved</p>
+			<div class="footer-center contact-container">
+				<a class="contact-link" href="mailto:<?php display_email(); ?>"><?php display_email(); ?></a>
 			</div>
-
+			<div class="footer-right misc-container">
+				<span>All rights reserved. &copy; <?php echo date("Y"); ?></span>
+			</div>
 		</footer>
 		<!-- /footer -->
 

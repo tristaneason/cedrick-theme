@@ -47,8 +47,6 @@
 
 		</section>
 		<!-- /section -->
-
-		<?php get_sidebar(); ?>
 	<?php } ?>
 
 <?php get_footer(); ?>
