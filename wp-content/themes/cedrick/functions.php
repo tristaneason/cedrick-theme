@@ -273,6 +273,20 @@ function display_social_media_links() {
 	}
 }
 
+// Create custom taxonomy for role
+function role_taxonomy_init() {
+	register_taxonomy(
+		'role',
+		'post',
+		array(
+			'label' => __('Role'),
+			'rewrite' => array(
+				'slug' => 'role'
+			)
+		)
+	);
+}
+
 // Create Custom Post Type
 function create_post_type_html5() {
 	register_taxonomy_for_object_type('category', 'project'); // Register Taxonomies for Category
@@ -341,6 +355,7 @@ add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action('init', 'role_taxonomy_init'); // Create custom taxonomy for role
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
