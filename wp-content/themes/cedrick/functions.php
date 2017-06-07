@@ -252,42 +252,64 @@ function html5_shortcode_demo_2($atts, $content = null) {
 	return "<h2>{$content}</h2>";
 }
 
+// Prints out social media label and linked username
+function display_social_media_links() {
+	$fields = get_fields();
+	if($fields) {
+		foreach($fields as $field_url) {                              // https://www.field.com/username/
+			$field_path      = parse_url($field_url, PHP_URL_PATH);     // /username
+			$field_domain    = parse_url($field_url, PHP_URL_HOST);     // www.field.com
+			$field_trim1     = str_replace("www.", "", $field_domain);  // field.com
+			$field_trim2     = str_replace(".com", "", $field_trim1);   // field
+			$field_name      = ucfirst($field_trim2);                   // Field
+			$field_username  = trim($field_path, "/");                  // username
+			$field_label     = "<span class=\"social-media-label\">{$field_name}</span>";
+			$field_href      = "<a target=\"_blank\" href=\"{$field_url}\">{$field_username}</a>";
+			$field_div       = "<div class=\"social-media-links\">{$field_label}{$field_href}</div>";
+			echo "<div class=\"social-media-links-container\">";
+			echo $field_div;
+			echo "</div>";
+		}
+	}
+}
+
 // Create Custom Post Type
 function create_post_type_html5() {
-	register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-	register_taxonomy_for_object_type('post_tag', 'html5-blank');
-	register_post_type('html5-blank', // Register Custom Post Type
+	register_taxonomy_for_object_type('category', 'project'); // Register Taxonomies for Category
+	register_taxonomy_for_object_type('post_tag', 'project');
+	register_post_type('project',
 		array(
-		'labels' => array(
-			'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-			'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-			'add_new' => __('Add New', 'html5blank'),
-			'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-			'edit' => __('Edit', 'html5blank'),
-			'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-			'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-			'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-			'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-			'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-			'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-			'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
-		),
-		'public' => true,
-		'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-		'has_archive' => true,
-		'menu_position' => 5,
-		'supports' => array(
-			'title',
-			'editor',
-			'excerpt',
-			'thumbnail'
-		), // Go to Dashboard Custom HTML5 Blank post for supports
-		'can_export' => true, // Allows export in Tools > Export
-		'taxonomies' => array(
-			'post_tag',
-			'category'
-		) // Add Category and Post Tags support
-	));
+			'labels' => array(
+				'name'                => __('Project Post', 'project'),
+				'singular_name'       => __('Project Post', 'project'),
+				'add_new'             => __('Add New', 'project'),
+				'add_new_item'        => __('Add New Project Post', 'project'),
+				'edit'                => __('Edit', 'project'),
+				'edit_item'           => __('Edit Project Post', 'project'),
+				'new_item'            => __('New Project Post', 'project'),
+				'view'                => __('View Project Post', 'project'),
+				'view_item'           => __('View Project Post', 'project'),
+				'search_items'        => __('Search Project Post', 'project'),
+				'not_found'           => __('No Project Post found', 'project'),
+				'not_found_in_trash'  => __('No Project Post found in Trash', 'project')
+			),
+			'public'         => true,
+			'hierarchical'   => true,
+			'has_archive'    => true,
+			'menu_position'  => 5,
+			'supports'       => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail'
+			), // Go to Dashboard Custom Project Post for supports
+			'can_export' => true, // Allows export in Tools > Export
+			'taxonomies' => array(
+				'post_tag',
+				'category'
+			) // Add Category and Post Tags support
+		)
+	);
 }
 
 if(function_exists('acf_add_options_page')) {
