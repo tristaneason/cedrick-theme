@@ -1,7 +1,17 @@
 		<!-- footer -->
 		<footer class="footer" role="contact-info">
-			<div class="footer-left next-container">
-				<a class="next-link" href="<?php  ?>">Next</a>
+			<div class="footer-left next-prev-container">
+				<?php
+				$prevPost = get_previous_post();
+				$prevPostID = $prevPost->ID;
+				if($prevPost) { ?>
+          <a class="next-link" href="<?php echo get_permalink($prevPost->ID); ?>">Next</a>
+         <?php
+			 	}
+				else { ?>
+	        <span class="disabled-next-link">Next</span>
+       	<?php
+		 		} ?>
 			</div>
 			<div class="footer-center project-container">
 				<h4 class="project-label">Project</h4>
