@@ -263,7 +263,7 @@ function display_social_media_links() {
 			$field_trim2     = str_replace(".com", "", $field_trim1);   // field
 			$field_name      = ucfirst($field_trim2);                   // Field
 			$field_username  = trim($field_path, "/");                  // username
-			$field_label     = "<span class=\"social-media-label\">{$field_name}</span>";
+			$field_label     = "<h2 class=\"social-media-label\">{$field_name}</h2>";
 			$field_href      = "<a target=\"_blank\" href=\"{$field_url}\">{$field_username}</a>";
 			$field_div       = "<div class=\"social-media-links\">{$field_label}{$field_href}</div>";
 			echo "<div class=\"social-media-links-container\">";
