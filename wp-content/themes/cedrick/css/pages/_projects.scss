@@ -1,0 +1,11 @@
+.projects-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .project-container {
+    .project-title {
+      color: $white;
+      text-align: center;
+    }
+  }
+}

@@ -3,40 +3,46 @@
  * Template Name: Projects Overview
  */
 
-get_header();
+get_header(); ?>
 
-$args = array(
-	'post_type' => array('project'),
-);
-$query = new WP_Query($args);
+<section class="projects-section">
 
-// Loop through project posts
-if($query->have_posts()) {
-	while($query->have_posts()) {
-		$query->the_post();
-		$project_url = get_post_permalink();
-		$project_title = get_the_title();
-		$project_thumbnail_array = get_field("project_thumbnail");
-		$project_thumbnail_url = $project_thumbnail_array["url"];
-		$project_thumbnail_alt = $project_thumbnail_array["alt"]; ?>
+	<?php
+	$args = array(
+		'post_type' => array('project'),
+	);
+	$query = new WP_Query($args);
 
-		<div class="project-container">
-			<a class="project-url" href="<?php echo $project_url; ?>">
-				<img class="project-thumbnail" src="<?php echo $project_thumbnail_url; ?>" alt="<?php echo $project_thumbnail_alt; ?>">
-			</a>
-			<a class="project-url" href="<?php echo $project_url; ?>">
-				<h2 class="project-title"><?php echo $project_title; ?></h2>
-			</a>
-		</div>
+	// Loop through project posts
+	if($query->have_posts()) {
+		while($query->have_posts()) {
+			$query->the_post();
+			$project_url = get_post_permalink();
+			$project_title = get_the_title();
+			$project_thumbnail_array = get_field("project_thumbnail");
+			$project_thumbnail_url = $project_thumbnail_array["url"];
+			$project_thumbnail_alt = $project_thumbnail_array["alt"]; ?>
 
-		<?php
-		wp_reset_postdata();
+
+			<div class="project-container">
+				<a class="project-url" href="<?php echo $project_url; ?>">
+					<img class="project-thumbnail" src="<?php echo $project_thumbnail_url; ?>" alt="<?php echo $project_thumbnail_alt; ?>">
+				</a>
+				<a class="project-url" href="<?php echo $project_url; ?>">
+					<h2 class="project-title"><?php echo $project_title; ?></h2>
+				</a>
+			</div>
+
+			<?php
+			wp_reset_postdata();
+		}
 	}
-}
-else {
-	echo "No project posts found :(";
-}
+	else {
+		echo "No project posts found :(";
+	} ?>
 
+</section>
+
+<?php
 get_footer();
-
 ?>

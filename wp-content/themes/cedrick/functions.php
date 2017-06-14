@@ -50,46 +50,9 @@ function html5blank_nav() {
 	);
 }
 
-// Load main site scripts
-function site_scripts() {
-	if(!is_admin()) {
-		$url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'; // the URL to check against
-		$test_url = @fopen($url,'r'); // test parameters
-		if($test_url !== false) { // test if the URL exists
-			function load_external_jQuery() { // load external file
-				wp_deregister_script( 'jquery' ); // deregisters the default WordPress jQuery
-				wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'); // register the external file
-				wp_enqueue_script('jquery'); // enqueue the external file
-			}
-			add_action('wp_enqueue_scripts', 'load_external_jQuery'); // initiate the function
-		}
-		else {
-			function load_local_jQuery() {
-				wp_register_script('jquery', get_template_directory_uri() . "/js/libs/jquery.js", array(), '2.1.1');
-				wp_enqueue_script('jquery'); // enqueue built in WordPress version
-			}
-		add_action('wp_enqueue_scripts', 'load_local_jQuery'); // initiate the function
-		}
-
-		// wp_register_script('siteScriptsHead', get_template_directory_uri() . '/js/min/scriptsHead-min.js', array(), '1.0.0', false); // Custom scripts in head
-		// wp_enqueue_script('siteScriptsHead');
-		wp_register_script('siteScripts', get_template_directory_uri() . '/js/min/scripts-min.js', array(), '1.0.0', true); // Custom scripts in foot
-		wp_enqueue_script('siteScripts');
-	}
-}
-
-// Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts() {
-	if(is_page('pagenamehere')) {
-		wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array(), '1.0.0'); // Conditional script(s)
-		wp_enqueue_script('scriptname');
-	}
-}
-
-// Load HTML5 Blank styles
-function html5blank_styles() {
-	wp_register_style('html5blank', get_template_directory_uri() . '/css/site.css', array(), '1.0', 'all');
-	wp_enqueue_style('html5blank');
+function cedrick_enqueue_scripts() {
+	wp_enqueue_style('style-name', get_template_directory_uri() . '/css/site.css');
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts-min.js', array(), 1, true);
 }
 
 // Register HTML5 Blank Navigation
@@ -252,27 +215,6 @@ function html5_shortcode_demo_2($atts, $content = null) {
 	return "<h2>{$content}</h2>";
 }
 
-// Prints out social media label and linked username
-function display_social_media_links() {
-	$fields = get_fields();
-	if($fields) {
-		foreach($fields as $field_url) {                              // https://www.field.com/username/
-			$field_path      = parse_url($field_url, PHP_URL_PATH);     // /username
-			$field_domain    = parse_url($field_url, PHP_URL_HOST);     // www.field.com
-			$field_trim1     = str_replace("www.", "", $field_domain);  // field.com
-			$field_trim2     = str_replace(".com", "", $field_trim1);   // field
-			$field_name      = ucfirst($field_trim2);                   // Field
-			$field_username  = trim($field_path, "/");                  // username
-			$field_label     = "<h2 class=\"social-media-label\">{$field_name}</h2>";
-			$field_href      = "<a target=\"_blank\" href=\"{$field_url}\">{$field_username}</a>";
-			$field_div       = "<div class=\"social-media-links\">{$field_label}{$field_href}</div>";
-			echo "<div class=\"social-media-links-container\">";
-			echo $field_div;
-			echo "</div>";
-		}
-	}
-}
-
 // Create custom taxonomy for role
 function role_taxonomy_init() {
 	register_taxonomy(
@@ -349,9 +291,7 @@ if(function_exists('acf_add_options_page')) {
 }
 
 // Add Actions
-add_action('init', 'site_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
-add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
+add_action('wp_enqueue_scripts', 'cedrick_enqueue_scripts'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination

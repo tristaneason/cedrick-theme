@@ -1,8 +1,14 @@
-// add header styles here
-
-
-// HEADER TYPOGRAPHY = = = = = = =
-
-
-// HEADER BREAKPOINTS = = = = = = =
-
+.header {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 7.75rem 5.5vw 0 5.5vw;
+  position: fixed;
+  width: 100%;
+  a {
+    font-size: 1.25rem;
+  }
+  .site-name {
+    color: $white;
+  }
+}

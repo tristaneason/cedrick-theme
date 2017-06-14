@@ -79,6 +79,7 @@ if(have_posts()) {
 	} // while
 } ?>
 
+<section class="project-section">
 	<div class="project-banner-container">
 		<?php echo $project_banner_images; ?>
 	</div>
@@ -118,6 +119,7 @@ if(have_posts()) {
 		<img src="<?php echo $project_bg_img_lower_url; ?>" style="height: 0; width: 0;" alt="<?php echo $project_bg_img_lower_alt; ?>">
 		<img src="<?php echo $project_screenshot_url_2; ?>" class="project-screenshot" alt="<?php $project_screenshot_alt_2 ?>">
 	</div>
+</section>
 
 <?php
 get_footer("project");

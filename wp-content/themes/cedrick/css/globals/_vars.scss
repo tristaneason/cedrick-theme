@@ -12,19 +12,21 @@ $lightGray: #f6f6f6;
 $medGrayLt: #d7d7d7;
 $medGray: #777777;
 $medGrayDk: #555555;
-$darkGray: #353333;
+$darkGray: #3B3B3B;
 
-$white: #fff;
-$black: #000;
+$white: #FFFFFF;
+$black: #000000;
 
 $test: #62e920;		// Test is a bright green just for testing purposes
 
 
 // FONT VARIABLES = = = = = = =
 
-$sans: 'Montserrat', Helvetica, sans-serif;		// Montserrat has weights of 400 & 700
-$sansAlt: 'Lato', Helvetica, sans-serif;			// Lato has weights of 100, 300, & 400
+$sans: 'Montserrat', Helvetica, Arial, sans-serif;		// Montserrat has weights of 400 & 700
+$sansAlt: 'Lato', Helvetica, Arial, sans-serif;			// Lato has weights of 100, 300, & 400
 $serif: 'Playfair Display', Times, Serif;			// Playfair Display has normal (400) weight with italic option
+
+$base-font-size: 16px;
 
 
 %sans {

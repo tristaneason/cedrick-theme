@@ -1,31 +1,33 @@
 .footer {
 	@extend %clear;
-}
-
-.footer-copyright {
-	
-}
-
-
-// FOOTER TYPOGRAPHY = = = = = = =
-
-.footer-copyright {
-
-	p {
-		font-family: $serif;
-		font-size: 16px;
-		line-height: 26px;
+	align-items: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.25rem;
+	.footer-item {
+		flex-grow: 1;
 	}
-
-	a {
-		color: $white;
-
-		&:hover {
-			color: $secondary;
-		}
+	.developer-container {
+		padding-left: 6vw;
+		text-align: left;
+	}
+	.contact-container {
+		text-align: center;
+	}
+	.misc-container {
+		padding-right: 6vw;
+		text-align: right;
 	}
 }
 
+.home {
+	.footer {
+		
+	}
+}
 
-// FOOTER BREAKPOINTS = = = = = = =
-
+.about {
+	.footer {
+		margin-top: -10rem;
+	}
+}

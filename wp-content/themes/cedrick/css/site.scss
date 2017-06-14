@@ -1,66 +1,40 @@
-//----------------------------------*\
-// LIBRARIES
-//----------------------------------*/
+// Libraries
+@import 'libs/normalize';
 
-@import 'libs/normalize.scss';
-@import 'libs/jquery.bxslider.css';
+// Globals, Layouts, Helpers
+@import 'globals/_vars';
+@import 'layouts/_layout';
+@import 'layouts/_grid';
+@import 'layouts/_cards';
+@import 'layouts/_flexbox';
+@import 'helpers/_misc';
+@import 'helpers/_helpers';
+@import 'helpers/_clearfix';
+@import 'globals/_defaults';
+@import 'helpers/_selection';
 
+// Mixins
+@import 'helpers/_media-query-mixins';
 
-//----------------------------------*\
-// GLOBALS, LAYOUTS, AND HELPERS
-//----------------------------------*/
+// Components
+@import 'components/_forms';
+@import 'components/_buttons';
 
-@import 'globals/_vars.scss';
-@import 'layouts/_layout.scss';
-@import 'layouts/_grid.scss';
-@import 'layouts/_cards.scss';
-@import 'layouts/_flexbox.scss';
-@import 'helpers/_misc.scss';
-@import 'helpers/_helpers.scss';
-@import 'helpers/_clearfix.scss';
-@import 'globals/_defaults.scss';
+// Modules
+@import 'modules/_header';
+@import 'modules/_menu';
+@import 'modules/_footer';
 
-
-//----------------------------------*\
-// SCSS MIXINS
-//----------------------------------*/
-
-@import 'helpers/_selection.scss';
-
-
-//----------------------------------*\
-// COMPONENTS
-//----------------------------------*/
-
-@import 'components/_forms.scss';
-@import 'components/_buttons.scss';
-
-
-//----------------------------------*\
-// MODULES
-//----------------------------------*/
-
-@import 'modules/_header.scss';
-@import 'modules/_menu.scss';
-@import 'modules/_footer.scss';
-
-
-//----------------------------------*\
-// PAGES
-//----------------------------------*/
-
-@import 'pages/_blog.scss';
-@import 'pages/_common.scss';
-
-
-//----------------------------------*\
-// LAST CALL GLOBALS
-//----------------------------------*/
+// Pages
+@import 'pages/_common';
+@import 'pages/_projects';
+@import 'pages/_project';
+@import 'pages/_about';
 
 // Enhancement modules
-@import 'globals/_breakpoints.scss';
-@import 'globals/_retina-images.scss';
-@import 'globals/_print.scss';
+@import 'globals/_breakpoints';
+@import 'globals/_retina-images';
+@import 'globals/_print';
 
 // Misc
 @import 'globals/wp-styles.css';

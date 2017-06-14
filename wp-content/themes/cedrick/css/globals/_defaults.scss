@@ -5,36 +5,38 @@
 }
 /* html element 62.5% font-size for REM use */
 html {
-	font-size: 62.5%;
+	font-size: $base-font-size;
 	height: 100%;
 }
 body {
-	font-size: 14px;
-	line-height: 1.6;
-	font-weight: 300;
-	font-family: $sans;
-	background: white;
-	color: #444;
+  @extend %sans;
+  background: $black;
+	color: $white;
+	font-size: $base-font-size;
 	height: 100%;
-	width: 100%;
-	padding: 0;
+  letter-spacing: -2px;
+	line-height: 1.6;
 	margin: 0;
+	padding: 0;
+	width: 100%;
 	-webkit-touch-callout: none !important;
 }
-
 img {
 	max-width: 100%;
 	vertical-align: bottom;
 }
 a {
-	color: $primary;
+	color: $darkGray;
 	text-decoration: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-a:focus {
-	outline: 0;
-}
-a:hover,
-a:active {
-	outline: 0;
+  &:active {
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    color: $white;
+    outline: 0;
+  }
 }

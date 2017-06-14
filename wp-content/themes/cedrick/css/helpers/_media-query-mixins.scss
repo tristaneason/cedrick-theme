@@ -1,0 +1,39 @@
+// Sizes include: 'sm', 'md', 'lg', 'xl' ,'xxl'
+
+// Example code
+// @include screen-size(lg) {
+  // Sass rules goes here...
+// }
+
+@mixin screen-size($size) {
+  @if $size == sm {
+    @media (min-width: $sm) {
+      @content;
+    }
+  }
+  @if $size == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+  @if $size == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  }
+  @if $size == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+  @if $size == xxl {
+    @media (min-width: $xxl) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}

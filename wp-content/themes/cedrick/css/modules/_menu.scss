@@ -1,0 +1,25 @@
+.nav {
+  ul {
+    display: flex;
+    .menu-item {
+      &.current-menu-item {
+        a {
+          color: $white;
+        }
+      }
+      &:first-child {
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
+.single-project {
+  .nav {
+    .menu-item {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
