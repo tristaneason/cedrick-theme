@@ -106,3 +106,4 @@ wp-content/mysql.sql
 # packages and package managers
 node_modules
 bower_components
+.sass-cache
