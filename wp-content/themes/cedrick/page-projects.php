@@ -23,7 +23,6 @@ get_header(); ?>
 			$project_thumbnail_url = $project_thumbnail_array["url"];
 			$project_thumbnail_alt = $project_thumbnail_array["alt"]; ?>
 
-
 			<div class="project-container">
 				<a class="project-url" href="<?php echo $project_url; ?>">
 					<img class="project-thumbnail" src="<?php echo $project_thumbnail_url; ?>" alt="<?php echo $project_thumbnail_alt; ?>">
