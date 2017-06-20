@@ -24,7 +24,7 @@ if(have_posts()) {
 						$field_trim2     = str_replace(".com", "", $field_trim1);   // field
 						$field_name      = ucfirst($field_trim2);                   // Field
 						$field_username  = trim($field_path, "/");                  // username
-						if(!empty($field_url)) {?>
+						if(!empty($field_url)) { ?>
 
 							<div class="social-media-item">
 								<h2 class="social-media-label"><?php echo $field_name; ?></h2>

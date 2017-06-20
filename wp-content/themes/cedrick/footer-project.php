@@ -1,12 +1,12 @@
 			<footer class="footer" role="contact-info">
-				<div class="footer-left next-prev-container">
+				<div class="footer-item next-prev-container">
 
 					<?php
 					$prev_post = get_previous_post();
 					$prev_post_id = $prev_post->ID;
 					if($prev_post) { ?>
 	          <a class="next-link" href="<?php echo get_permalink($prev_post_id); ?>">Next</a>
-	         <?php
+	        <?php
 				 	}
 					else { ?>
 		        <span class="disabled-next-link">Next</span>
@@ -14,11 +14,11 @@
 			 		} ?>
 
 				</div>
-				<div class="footer-center project-container">
+				<div class="footer-item project-container">
 					<h4 class="project-label">Project</h4>
 					<span class="project-name"><?php echo get_the_title(); ?></span>
 				</div>
-				<div class="footer-right date-container">
+				<div class="footer-item date-container">
 					<h4 class="date-label">Year</h4>
 					<span class="date-entry"><?php echo get_the_date("Y"); ?></span>
 				</div>

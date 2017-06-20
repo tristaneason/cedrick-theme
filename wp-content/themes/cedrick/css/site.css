@@ -398,7 +398,7 @@ td,
 th {
   padding: 0; }
 
-body {
+body, .projects-section .project-container .project-title {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
@@ -4684,7 +4684,7 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 7.75rem 5.5vw 0 5.5vw;
+  padding: 9vh 5.5vw 0 5.5vw;
   position: fixed;
   width: 100%; }
   .header a {
@@ -4728,7 +4728,7 @@ input:focus {
     text-align: right; }
 
 .about .footer {
-  margin-top: -10rem; }
+  margin-top: -12vh; }
 
 .vAlign {
   position: relative;
@@ -4786,9 +4786,22 @@ input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .projects-section .project-container .project-title {
-    color: #FFFFFF;
+  .projects-section .project-container {
     text-align: center; }
+    .projects-section .project-container .project-thumbnail {
+      height: auto;
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%);
+      width: 40%; }
+    .projects-section .project-container .project-title {
+      color: #FFFFFF;
+      font-size: 7vw;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .projects-section .project-container .project-title::before {
+        content: "/";
+        letter-spacing: .75vw; }
 
 .about-section {
   -webkit-box-align: center;

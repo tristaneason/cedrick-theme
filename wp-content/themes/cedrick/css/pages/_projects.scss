@@ -3,9 +3,22 @@
   display: flex;
   flex-direction: column;
   .project-container {
+    text-align: center;
+    .project-thumbnail {
+      height: auto;
+      transform: translateY(50%);
+      width: 40%;
+    }
     .project-title {
+      @extend %sans;
       color: $white;
+      font-size: 7vw;
       text-align: center;
+      transform: translateY(-50%);
+      &::before {
+        content: "/";
+        letter-spacing: .75vw;
+      }
     }
   }
 }
