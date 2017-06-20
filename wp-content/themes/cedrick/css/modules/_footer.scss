@@ -22,12 +22,47 @@
 
 .home {
 	.footer {
-
+		margin-top: -12vh;
 	}
 }
 
 .about {
 	.footer {
 		margin-top: -12vh;
+	}
+}
+
+.single-project {
+	.footer {
+		background: $footerGray;
+		justify-content: center;
+		padding: 30vh 0;
+		&:hover {
+			background: lighten($footerGray, 3%);
+		}
+		.footer-container {
+			align-items: center;
+			display: flex;
+			width: 60vw;
+			.footer-item {
+				padding-left: 5vw;
+				.next-link {
+					color: $white;
+					font-size: 5rem;
+					&::before {
+						content: "/";
+						letter-spacing: 0px;
+					}
+				}
+				.footer-label {
+					font-size: .75rem;
+					margin-bottom: .6rem;
+					text-transform: uppercase;
+				}
+				.footer-entry {
+					font-weight: 600;
+				}
+			}
+		}
 	}
 }

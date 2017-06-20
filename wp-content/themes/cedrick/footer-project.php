@@ -1,26 +1,28 @@
 			<footer class="footer" role="contact-info">
-				<div class="footer-item next-prev-container">
+				<div class="footer-container">
+					<div class="footer-item next-prev-container">
 
-					<?php
-					$prev_post = get_previous_post();
-					$prev_post_id = $prev_post->ID;
-					if($prev_post) { ?>
-	          <a class="next-link" href="<?php echo get_permalink($prev_post_id); ?>">Next</a>
-	        <?php
-				 	}
-					else { ?>
-		        <span class="disabled-next-link">Next</span>
-	       	<?php
-			 		} ?>
+						<?php
+						$prev_post = get_previous_post();
+						$prev_post_id = $prev_post->ID;
+						if($prev_post) { ?>
+		          <a class="next-link" href="<?php echo get_permalink($prev_post_id); ?>">Next</a>
+		        <?php
+					 	}
+						else { ?>
+			        <span class="disabled-next-link">Next</span>
+		       	<?php
+				 		} ?>
 
-				</div>
-				<div class="footer-item project-container">
-					<h4 class="project-label">Project</h4>
-					<span class="project-name"><?php echo get_the_title(); ?></span>
-				</div>
-				<div class="footer-item date-container">
-					<h4 class="date-label">Year</h4>
-					<span class="date-entry"><?php echo get_the_date("Y"); ?></span>
+					</div>
+					<div class="footer-item project-container">
+						<h4 class="footer-label project-label">Project</h4>
+						<span class="footer-entry project-name"><?php echo get_the_title(); ?></span>
+					</div>
+					<div class="footer-item date-container">
+						<h4 class="footer-label date-label">Year</h4>
+						<span class="footer-entry date-entry"><?php echo get_the_date("Y"); ?></span>
+					</div>
 				</div>
 			</footer>
 
