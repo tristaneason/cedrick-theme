@@ -1,8 +1,8 @@
 // COLOR VARIABLES = = = = = = =
 
-$primary: #4ca2d6;		// Primary is Blue
-$secondary: #eed31e;		// Secondary is Yellow
-$tertiary: #f926a2;		// Tertiary is Magenta (pink)
+$primary: #4ca2d6;    // Primary is Blue
+$secondary: #eed31e;    // Secondary is Yellow
+$tertiary: #f926a2;    // Tertiary is Magenta (pink)
 
 // darkening code
 // @link-hover-color: darken(@link-color, 15%);
@@ -18,39 +18,39 @@ $footerGray: #121212;
 $white: #FFFFFF;
 $black: #000000;
 
-$test: #62e920;		// Test is a bright green just for testing purposes
+$test: #62e920;    // Test is a bright green just for testing purposes
 
 
 // FONT VARIABLES = = = = = = =
 
-$sans: 'Montserrat', Helvetica, Arial, sans-serif;		// Montserrat has weights of 400 & 700
-$sansAlt: 'Lato', Helvetica, Arial, sans-serif;			// Lato has weights of 100, 300, & 400
-$serif: 'Playfair Display', Times, Serif;			// Playfair Display has normal (400) weight with italic option
+$sans: 'Montserrat', Helvetica, Arial, sans-serif;    // Montserrat has weights of 400 & 700
+$sansAlt: 'Lato', Helvetica, Arial, sans-serif;      // Lato has weights of 100, 300, & 400
+$serif: 'Playfair Display', Times, Serif;      // Playfair Display has normal (400) weight with italic option
 
 $base-font-size: 16px;
 
 
 %sans {
-	font-family: $sans;
-	font-weight: 400;
+  font-family: $sans;
+  font-weight: 400;
 }
 %sansIt {
-	@extend %sans;
-	font-style: italic;
+  @extend %sans;
+  font-style: italic;
 }
 %sansB {
-	@extend %sans;
-	font-weight: 700;
+  @extend %sans;
+  font-weight: 700;
 }
 
 
 %serif {
-	font-family: $serif;
-	font-weight: 400;
+  font-family: $serif;
+  font-weight: 400;
 }
 %serifB {
-	@extend %serif;
-	font-weight: 700;
+  @extend %serif;
+  font-weight: 700;
 }
 
 $sm:  576px;
