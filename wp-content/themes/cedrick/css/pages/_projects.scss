@@ -6,7 +6,22 @@
     margin-bottom: 25rem;
     text-align: center;
     &:first-child {
-      margin-top: -13vw;
+      margin-top: 15vw;
+      @include screen-size(sm) {
+        margin-top: -3vw;
+      }
+      @include screen-size(md) {
+        margin-top: -15vw;
+      }
+      @include screen-size(lg) {
+        margin-top: -16vw;
+      }
+      @include screen-size(xl) {
+        margin-top: -13vw;
+      }
+      @include screen-size(xxl) {
+        margin-top: 1vw;
+      }
     }
     .project-thumbnail {
       height: auto;

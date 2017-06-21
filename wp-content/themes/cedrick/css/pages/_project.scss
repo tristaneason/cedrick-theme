@@ -1,27 +1,44 @@
 .project-section {
   .project-banner-container {
-    align-items: center;
-    display: flex;
-    float: left;
     margin-bottom: 12vw;
-    padding-top: 38vh;
-    transform: translate(14.5%);
+    padding-top: 15vh;
+    @include screen-size(lg) {
+      align-items: center;
+      display: flex;
+      float: left;
+      padding-top: 38vh;
+      transform: translate(14.5%);
+    }
     .project-banner-image {
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
       height: 60vh;
-      width: 50vw;
+      width: 100vw;
+      @include screen-size(lg) {
+        width: 50vw;
+      }
     }
   }
   .project-header-container {
     border-bottom: 1px solid $darkGray;
-    transform: translate(30.5%);
-    width: 73vw;
+    margin: 0 auto;
+    width: 90vw;
+    @include screen-size(lg) {
+      margin: 0;
+      transform: translate(30.5%);
+      width: 73vw;
+    }
     .project-title {
-      font-size: 2.75vw;
-      letter-spacing: -2px;
-      margin-bottom: 1vw;
+      margin-bottom: 3vw;
+      @include screen-size(md) {
+        margin-bottom: 2vw;
+      }
+      @include screen-size(lg) {
+        font-size: 2.75vw;
+        letter-spacing: -2px;
+        margin-bottom: 1vw;
+      }
       &::before {
         content: "/";
         letter-spacing: .25vw;
@@ -30,20 +47,40 @@
     .project-category {
       color: $darkGray;
       float: right;
-      margin-top: -3.5vw;
+      margin-top: -12vw;
+      @include screen-size(sm) {
+        margin-top: -9vw;
+      }
+      @include screen-size(md) {
+        margin-top: -6vw;
+      }
+      @include screen-size(lg) {
+        margin-top: -3.5vw;
+      }
     }
   }
   .project-meta-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 4vw 0 7vw;
-    transform: translate(110%);
-    width: 43vw;
+    margin: 4vw auto 7vw;
+    width: 90vw;
+    @include screen-size(lg) {
+      display: flex;
+      justify-content: space-between;
+      margin: 4vw 0 7vw;
+      transform: translate(110%);
+      width: 43vw;
+    }
     .project-meta-item {
+      margin-bottom: 3rem;
+      @include screen-size(lg) {
+        margin-bottom: 0;
+      }
       .project-meta-title {
-        font-size: .75rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         text-transform: uppercase;
+        @include screen-size(lg) {
+          font-size: .75rem;
+        }
       }
       .project-meta-entry {
         font-weight: 600;
@@ -51,9 +88,13 @@
     }
   }
   .project-summary-container {
-    margin-bottom: 7vw;
-    transform: translate(30.5%);
-    width: 73vw;
+    margin: 0 auto 7vw;
+    width: 90vw;
+    @include screen-size(lg) {
+      margin: 0 0 7vw;
+      transform: translate(30.5%);
+      width: 73vw;
+    }
     .project-summary {
       p {
         margin-bottom: 1rem;
@@ -61,10 +102,17 @@
     }
   }
   .project-screenshots-1 {
-    transform: translate(22%);
+    text-align: center;
+    @include screen-size(lg) {
+      text-align: left;
+      transform: translate(22%);
+    }
     .project-background-image-top {
       background-size: cover !important;
-      width: 78vw;
+      width: 100vw;
+      @include screen-size(lg) {
+        width: 78vw;
+      }
     }
     .project-screenshot {
       margin-top: 6vw;

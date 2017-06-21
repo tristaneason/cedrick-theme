@@ -1,22 +1,32 @@
 .footer {
 	@extend %clear;
-	align-items: flex-end;
-	display: flex;
-	flex-wrap: wrap;
 	font-size: 1.25rem;
+	@include screen-size(md) {
+		align-items: flex-end;
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.footer-item {
-		flex-grow: 1;
+		@include screen-size(md) {
+			flex-grow: 1;
+		}
 	}
 	.developer-container {
-		padding-left: 6vw;
-		text-align: left;
+		text-align: center;
+		@include screen-size(md) {
+			padding-left: 6vw;
+			text-align: left;
+		}
 	}
 	.contact-container {
 		text-align: center;
 	}
 	.misc-container {
-		padding-right: 6vw;
-		text-align: right;
+		text-align: center;
+		@include screen-size(md) {
+			padding-right: 6vw;
+			text-align: right;
+		}
 	}
 }
 
@@ -36,16 +46,27 @@
 	.footer {
 		background: $footerGray;
 		justify-content: center;
-		padding: 30vh 0;
+		padding: 10vh 0;
+		@include screen-size(md) {
+			padding: 30vh 0;
+		}
 		&:hover {
 			background: lighten($footerGray, 3%);
 		}
 		.footer-container {
-			align-items: center;
-			display: flex;
-			width: 60vw;
+			@include screen-size(md) {
+				align-items: center;
+				display: flex;
+				width: 60vw;
+			}
 			.footer-item {
-				padding-left: 5vw;
+				margin-bottom: 6vw;
+				text-align: center;
+				@include screen-size(md) {
+					margin-bottom: 0vw;
+					padding-left: 5vw;
+					text-align: left;
+				}
 				.next-link,
 				.disabled-next-link {
 					color: $white;
