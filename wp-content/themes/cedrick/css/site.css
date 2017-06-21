@@ -4690,7 +4690,8 @@ input:focus {
           justify-content: space-between;
   padding: 9vh 5.5vw 0 5.5vw;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   .header a {
     font-size: 1.25rem; }
   .header .site-name {
