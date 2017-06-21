@@ -46,7 +46,8 @@
 			width: 60vw;
 			.footer-item {
 				padding-left: 5vw;
-				.next-link {
+				.next-link,
+				.disabled-next-link {
 					color: $white;
 					font-size: 5rem;
 					&::before {

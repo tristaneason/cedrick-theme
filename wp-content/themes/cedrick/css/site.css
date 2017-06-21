@@ -4756,10 +4756,12 @@ input:focus {
     width: 60vw; }
     .single-project .footer .footer-container .footer-item {
       padding-left: 5vw; }
-      .single-project .footer .footer-container .footer-item .next-link {
+      .single-project .footer .footer-container .footer-item .next-link,
+      .single-project .footer .footer-container .footer-item .disabled-next-link {
         color: #FFFFFF;
         font-size: 5rem; }
-        .single-project .footer .footer-container .footer-item .next-link::before {
+        .single-project .footer .footer-container .footer-item .next-link::before,
+        .single-project .footer .footer-container .footer-item .disabled-next-link::before {
           content: "/";
           letter-spacing: 0px; }
       .single-project .footer .footer-container .footer-item .footer-label {
