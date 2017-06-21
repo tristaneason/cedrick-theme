@@ -5,6 +5,9 @@
   .project-container {
     margin-bottom: 25rem;
     text-align: center;
+    &:first-child {
+      margin-top: -13vw;
+    }
     .project-thumbnail {
       height: auto;
       transform: translateY(50%);

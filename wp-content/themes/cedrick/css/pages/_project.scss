@@ -21,6 +21,7 @@
     .project-title {
       font-size: 2.75vw;
       letter-spacing: -2px;
+      margin-bottom: 1vw;
       &::before {
         content: "/";
         letter-spacing: .25vw;
@@ -50,8 +51,14 @@
     }
   }
   .project-summary-container {
+    margin-bottom: 7vw;
     transform: translate(30.5%);
     width: 73vw;
+    .project-summary {
+      p {
+        margin-bottom: 1rem;
+      }
+    }
   }
   .project-screenshots-1 {
     transform: translate(22%);

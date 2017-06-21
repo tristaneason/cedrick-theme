@@ -4,6 +4,7 @@
  */
 
 get_header();
+$show_wysiwyg_content = true;
 
 if(have_posts()) {
 	while(have_posts()) {
@@ -87,9 +88,9 @@ if(have_posts()) {
 	</div>
 
 	<div class="project-summary-container">
-		<p class="project-summary">
-			<?php the_content(); ?>
-		</p>
+		<div class="project-summary">
+			<?php $show_wysiwyg_content ? the_content() : null; ?>
+		</div>
 	</div>
 
 	<div class="project-screenshots-1">

@@ -4828,6 +4828,8 @@ input:focus {
   .projects-section .project-container {
     margin-bottom: 25rem;
     text-align: center; }
+    .projects-section .project-container:first-child {
+      margin-top: -13vw; }
     .projects-section .project-container .project-thumbnail {
       height: auto;
       -webkit-transform: translateY(50%);
@@ -4869,7 +4871,8 @@ input:focus {
   width: 73vw; }
   .project-section .project-header-container .project-title {
     font-size: 2.75vw;
-    letter-spacing: -2px; }
+    letter-spacing: -2px;
+    margin-bottom: 1vw; }
     .project-section .project-header-container .project-title::before {
       content: "/";
       letter-spacing: .25vw; }
@@ -4895,9 +4898,12 @@ input:focus {
   .project-section .project-meta-info .project-meta-item .project-meta-entry {
     font-weight: 600; }
 .project-section .project-summary-container {
+  margin-bottom: 7vw;
   -webkit-transform: translate(30.5%);
           transform: translate(30.5%);
   width: 73vw; }
+  .project-section .project-summary-container .project-summary p {
+    margin-bottom: 1rem; }
 .project-section .project-screenshots-1 {
   -webkit-transform: translate(22%);
           transform: translate(22%); }
